@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/jquery.ui.datepicker.min.css"/>
+    <link rel="stylesheet" href="css/jquery_ui_date_picker.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-toggle.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+                <!--Javascript Added-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery_ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-toggle.min.js"></script>
+</head>
+<body>
+    <header class="title-bar"><i class="glyphicon glyphicon-th"></i> Daily Task</header>
+    <div class="nav">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-plus-sign"></i> Add</a></li>
+            <li role="presentation"><a href="#profile" id="open_task" aria-controls="profile" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-ok-circle"></i> Tasks</a></li>
+            <li role="presentation"><a href="#messages" id="closeX_task" aria-controls="messages" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-ban-circle"></i> Open</a></li>
+        </ul>
+    </div>
+    <div class="body-tabs">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="wrap-body">
+                    <h3> Add you task here! </h3>
+                    <div class="add-form">
+                        <form action="javascript:void(0)" id="task_form">
+                            <div class="form-group">
+                                <label for="tsk_date">Date :</label>
+                                <div class="clearfix"></div>
+                                <input type="text" class="form-control pull-left" id="tsk_date" name="tsk_date" style="width: 110px"/>
+                                <div style="margin-left: 20px;" class="pull-left">
+                                    <input type="checkbox" name="tsk_status" checked id="tsk_status">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="tsk_name">Task :</label>
+                                <input type="text" class="form-control" id="tsk_name" name="tsk_name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="tsk_about">Summary :</label>
+                                <textarea class="form-control" id="tsk_about" name="tsk_about">
+                                </textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block" id="submit_add"><i class="glyphicon glyphicon-plus-sign"></i> Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <div class="open_tasks">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+                <div class="close_tasksM">
+                    <ul>
+
+                    </ul>
+                    <div class="cllClear" id="AllClear">
+                        <span>Remove All Records</span><i class="glyphicon glyphicon-trash"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

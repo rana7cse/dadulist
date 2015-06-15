@@ -1,0 +1,282 @@
+body {
+    font-family: 'HelveticaNeue', Arial, sans-serif;
+    font-size: 13px;
+    color: #666;
+    background: #f5f5f5;
+}
+ul{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 8px 0;
+}
+
+.title-bar {
+    padding: 7px 0px;
+    background: #44B3C6 none repeat scroll 0% 0%;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 3px solid #4291A7;
+}
+
+.nav {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: outside none none;
+    background: #E7E6E6;
+}
+
+.nav.nav-tabs {
+    border: medium none;
+    box-shadow: 0px 1px 1px #CECBCB;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #4291A7;
+    border: 0;
+    color: #fff;
+}
+
+.nav-tabs > li {
+    width: 33.3%;
+}
+
+.nav-tabs > li > a {
+    text-align: center;
+    color: #008CB1;
+}
+
+.ui-datepicker {
+    width: 17em;
+    padding: 0.2em 3px 0px 0.2em;
+    display: none;
+    background: #29D0DD none repeat scroll 0% 0%;
+    border: 2px dotted #E3E3E3;
+    box-shadow: 2px 3px 2px #96BABC;
+}
+
+.body-tabs {
+    padding: 0 10px;
+}
+
+.wrap-body {
+    
+}
+
+.wrap-body h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.wrap-body .add-form input[type="text"] {
+    border-radius: 0px;
+    height: 35px;
+    border: 1px solid #6BD8D4;
+    border-bottom-width: 2px;
+}
+
+.btn-primary {
+    background: #6BD8D4;
+    border-color: #6BD8D4;
+}
+
+.wrap-body .add-form input[type="text"]:focus {
+    background: #f5f5f5;
+}
+
+.wrap-body .add-form button.btn-success {
+    margin-top: 25px;
+    background: #35B7A0 none repeat scroll 0% 0%;
+    border-radius: 0px;
+    border: 1px solid #209588;
+    padding: 13px 0;
+}
+
+.wrap-body .add-form textarea {
+    border-radius: 0;
+    border: 1px solid #6BD8D4;
+    border-bottom-width: 2px;
+    font-size: 13px;
+    background: #FBFBFB;
+}
+
+#tsk_about {
+    height: 60px;
+    line-height: 15px;
+}
+
+.wrap-body .add-form textarea:focus{
+    background: #f5f5f5;
+}
+
+.open_tasks ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.open_tasks ul li {
+    background: #fdfdfd none repeat scroll 0% 0%;
+    margin-bottom: 5px;
+    border: 1px solid #EAEAEA;
+    border-bottom: 2px solid #DEDDDD;
+}
+
+.open_tasks ul li .task_title{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #6D99A8;
+}
+
+.open_tasks ul li p {
+    padding: 0 10px;
+    color: #8D8D8D;
+}
+
+.open_tasks ul li .task_footer{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #f5f5f5;
+    background: #F9F9F9;
+}
+
+.open_tasks ul li .task_footer span {
+    padding: 3px 5px;
+    color: #fff;
+    margin-left: 1px;
+}
+
+.task_date {
+    background: #6BC5FF;
+}
+
+.task_status {
+    background: #E3E90A;
+    text-transform: uppercase;
+}
+
+.open_tasks ul li .task_footer i{
+    padding: 5px;
+    margin-left: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.is_close_btn {
+    background: #7CD529;
+}
+
+.is_del_btn {
+    background: #E92A2A;
+}
+
+.open_tasks ul li .task_footer i:focus{
+    background: rgba(0, 0, 0, 0.27);
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: 0.2em 0px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ui-datepicker-calendar thead th {
+    border-right: 1px solid #5CACC2;
+    color: #fff;
+    border-bottom: 1px solid #60AEC3;
+    border-top: 1px solid #5CACC2;
+}
+
+.ui-datepicker-calendar thead th:last-child{
+    border-right: none;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 13px;
+}
+
+.ui-datepicker-calendar tbody td a{
+    background: #40C0C5;
+    color: #fff;
+}
+
+.close_tasksM ul{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.close_tasksM ul li {
+    padding: 3px 5px;
+    background: #ECECEC none repeat scroll 0% 0%;
+    color: #7A7979;
+    border: 1px solid #DDD;
+    margin-bottom: 5px;
+}
+
+.close_tasksM ul li h4 {
+    margin: 0;
+    padding: 3px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.close_tasksM ul li p {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.close_tasksM .task_footer span{
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.close_tasksM .task_date {
+    background: #7497A8;
+}
+
+.close_tasksM .task_status {
+    background: #BCBD8E;
+    margin-left: 5px;
+}
+
+.cllClear {
+    padding: 5px;
+    width: 155px;
+    margin: 5px auto;
+    border: 1px solid #E0E0E0;
+    background: #fff;
+    color: #f64426;
+    cursor: pointer;
+}
+
+.cllClear i {
+    background: #f64426;
+    padding: 3px;
+    margin-left: 3px;
+    color: #fff;
+}
